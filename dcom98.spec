@@ -5,27 +5,26 @@
 # DCOM98 itself. Satisfying the terms of DCOM98's license remains the user's
 # responsibility.
 
-%define	ver	1.3
-%define	rel	3
 %define _wine_cdrive	%{_datadir}/wine
 %define _wine_system	%{_wine_cdrive}/windows/system
 
 Summary:	Package of DLLs supporting Microsoft's DCOM framework.
 Name:		dcom98
-Version:	%ver
-Release:	%rel
+Version:	1.3
+Release:	3
+Group:		Libraries
+License:	Distributable
 Vendor:		Microsoft
 Source0:	http://download.microsoft.com/msdownload/dcom/98/x86/en/%{name}.exe
-Requires:	wine, wine-utils
-BuildRequires:	wine, cabextract
-Group:		System/Libraries
-######		Unknown group!
-License:	Distributable
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Url:		http://www.microsoft.com/com/tech/DCOM.asp
-ExclusiveArch:	%{ix86}
+# Source0-md5:	9a7bc7ff37168217123a5e28aadef897
+URL:		http://www.microsoft.com/com/tech/DCOM.asp
+Requires:	wine
+#Requires:	wine-utils
+BuildRequires:	cabextract
+BuildRequires:	wine
 Obsoletes:	dcom
-
+ExclusiveArch:	%{ix86}
+Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Distributed Component Object Model (DCOM) is a protocol that
