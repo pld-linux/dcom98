@@ -24,7 +24,7 @@ BuildRequires:	cabextract
 BuildRequires:	wine
 Obsoletes:	dcom
 ExclusiveArch:	%{ix86}
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Distributed Component Object Model (DCOM) is a protocol that
