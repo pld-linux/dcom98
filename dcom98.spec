@@ -21,7 +21,6 @@ URL:		http://www.microsoft.com/com/tech/DCOM.asp
 Requires:	wine
 #Requires:	wine-utils
 BuildRequires:	cabextract
-BuildRequires:	wine
 Obsoletes:	dcom
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
