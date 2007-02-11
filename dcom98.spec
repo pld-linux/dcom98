@@ -32,7 +32,7 @@ a reliable, secure, and efficient manner. Previously called "Network
 OLE," DCOM is designed for use across multiple network transports,
 including Internet protocols such as HTTP. DCOM is based on the Open
 Software Foundation's DCE-RPC spec and will work with both Java
-applets and ActiveX® components through its use of the Component
+applets and ActiveXÂ® components through its use of the Component
 Object Model (COM). Follow the links below to learn more about DCOM.
 
 %prep
