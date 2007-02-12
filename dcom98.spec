@@ -9,7 +9,7 @@
 %define _wine_system	%{_wine_cdrive}/windows/system
 
 Summary:	Package of DLLs supporting Microsoft's DCOM framework
-Summary(pl):	Pakiet bibliotek DLL obs³uguj±cych szkielet DCOM Microsoftu
+Summary(pl.UTF-8):   Pakiet bibliotek DLL obsÅ‚ugujÄ…cych szkielet DCOM Microsoftu
 Name:		dcom98
 Version:	1.3
 Release:	3
@@ -36,14 +36,14 @@ Software Foundation's DCE-RPC spec and will work with both Java
 applets and ActiveX(R) components through its use of the Component
 Object Model (COM).
 
-%description -l pl
-DCOM (Distributed Component Object Model) to protokó³ pozwalaj±cy
-komponentom programowym komunikowaæ siê bezpo¶rednio po sieci w pewny,
-bezpieczny i wydajny sposób. Znany wcze¶niej jako "sieciowe OLE", DCOM
-zosta³ zaprojektowany do u¿ywania poprzez wiele sieciowych warstw
-transportowych, w tym protoko³ów internetowych takich jak HTTP. DCOM
-jest oparty na specyfikacji DCE-RPC Open Software Foundation i dzia³a
-zarówno z apletami Javy, jak i komponentami ActiveX(R) dziêki
+%description -l pl.UTF-8
+DCOM (Distributed Component Object Model) to protokÃ³Å‚ pozwalajÄ…cy
+komponentom programowym komunikowaÄ‡ siÄ™ bezpoÅ›rednio po sieci w pewny,
+bezpieczny i wydajny sposÃ³b. Znany wczeÅ›niej jako "sieciowe OLE", DCOM
+zostaÅ‚ zaprojektowany do uÅ¼ywania poprzez wiele sieciowych warstw
+transportowych, w tym protokoÅ‚Ã³w internetowych takich jak HTTP. DCOM
+jest oparty na specyfikacji DCE-RPC Open Software Foundation i dziaÅ‚a
+zarÃ³wno z apletami Javy, jak i komponentami ActiveX(R) dziÄ™ki
 wykorzystaniu modelu COM (Component Object Model).
 
 %prep
