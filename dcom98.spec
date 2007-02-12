@@ -8,7 +8,8 @@
 %define _wine_cdrive	%{_datadir}/wine
 %define _wine_system	%{_wine_cdrive}/windows/system
 
-Summary:	Package of DLLs supporting Microsoft's DCOM framework.
+Summary:	Package of DLLs supporting Microsoft's DCOM framework
+Summary(pl):	Pakiet bibliotek DLL obs³uguj±cych szkielet DCOM Microsoftu
 Name:		dcom98
 Version:	1.3
 Release:	3
@@ -32,8 +33,18 @@ a reliable, secure, and efficient manner. Previously called "Network
 OLE," DCOM is designed for use across multiple network transports,
 including Internet protocols such as HTTP. DCOM is based on the Open
 Software Foundation's DCE-RPC spec and will work with both Java
-applets and ActiveXÂ® components through its use of the Component
-Object Model (COM). Follow the links below to learn more about DCOM.
+applets and ActiveX(R) components through its use of the Component
+Object Model (COM).
+
+%description -l pl
+DCOM (Distributed Component Object Model) to protokó³ pozwalaj±cy
+komponentom programowym komunikowaæ siê bezpo¶rednio po sieci w pewny,
+bezpieczny i wydajny sposób. Znany wcze¶niej jako "sieciowe OLE", DCOM
+zosta³ zaprojektowany do u¿ywania poprzez wiele sieciowych warstw
+transportowych, w tym protoko³ów internetowych takich jak HTTP. DCOM
+jest oparty na specyfikacji DCE-RPC Open Software Foundation i dzia³a
+zarówno z apletami Javy, jak i komponentami ActiveX(R) dziêki
+wykorzystaniu modelu COM (Component Object Model).
 
 %prep
 /usr/bin/cabextract -L $RPM_SOURCE_DIR/dcom98.exe
@@ -41,35 +52,35 @@ Object Model (COM). Follow the links below to learn more about DCOM.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_wine_system}
-install -d $RPM_BUILD_ROOT%{_wine_cdrive}/inf/
-mv advpack.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv asycfilt.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv comcat.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv compobj.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv dcom98.inf $RPM_BUILD_ROOT%{_wine_cdrive}/inf/
-mv dllhost.exe $RPM_BUILD_ROOT%{_wine_system}/
-mv imagehlp.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv iprop.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv ole2.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv ole32.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv oleaut32.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv olecnv32.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv olepro32.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv olethk32.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcltc1.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcltc5.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcltccm.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpclts5.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcltscm.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcmqcl.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcmqsvr.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcns4.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcrt4.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv rpcss.exe $RPM_BUILD_ROOT%{_wine_system}/
-mv secur32.dll $RPM_BUILD_ROOT%{_wine_system}/
-mv stdole2.tlb $RPM_BUILD_ROOT%{_wine_system}/
-mv stdole32.tlb $RPM_BUILD_ROOT%{_wine_system}/
-mv storage.dll $RPM_BUILD_ROOT%{_wine_system}/
+install -d $RPM_BUILD_ROOT%{_wine_cdrive}/inf
+mv advpack.dll $RPM_BUILD_ROOT%{_wine_system}
+mv asycfilt.dll $RPM_BUILD_ROOT%{_wine_system}
+mv comcat.dll $RPM_BUILD_ROOT%{_wine_system}
+mv compobj.dll $RPM_BUILD_ROOT%{_wine_system}
+mv dcom98.inf $RPM_BUILD_ROOT%{_wine_cdrive}/inf
+mv dllhost.exe $RPM_BUILD_ROOT%{_wine_system}
+mv imagehlp.dll $RPM_BUILD_ROOT%{_wine_system}
+mv iprop.dll $RPM_BUILD_ROOT%{_wine_system}
+mv ole2.dll $RPM_BUILD_ROOT%{_wine_system}
+mv ole32.dll $RPM_BUILD_ROOT%{_wine_system}
+mv oleaut32.dll $RPM_BUILD_ROOT%{_wine_system}
+mv olecnv32.dll $RPM_BUILD_ROOT%{_wine_system}
+mv olepro32.dll $RPM_BUILD_ROOT%{_wine_system}
+mv olethk32.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcltc1.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcltc5.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcltccm.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpclts5.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcltscm.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcmqcl.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcmqsvr.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcns4.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcrt4.dll $RPM_BUILD_ROOT%{_wine_system}
+mv rpcss.exe $RPM_BUILD_ROOT%{_wine_system}
+mv secur32.dll $RPM_BUILD_ROOT%{_wine_system}
+mv stdole2.tlb $RPM_BUILD_ROOT%{_wine_system}
+mv stdole32.tlb $RPM_BUILD_ROOT%{_wine_system}
+mv storage.dll $RPM_BUILD_ROOT%{_wine_system}
 mv w95inf16.dll $RPM_BUILD_ROOT%{_wine_system}/w95inf16.dll
 mv w95inf32.dll $RPM_BUILD_ROOT%{_wine_system}/w95inf32.dll
 
