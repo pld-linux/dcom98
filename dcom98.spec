@@ -9,7 +9,7 @@
 %define _wine_system	%{_wine_cdrive}/windows/system
 
 Summary:	Package of DLLs supporting Microsoft's DCOM framework
-Summary(pl.UTF-8):   Pakiet bibliotek DLL obsługujących szkielet DCOM Microsoftu
+Summary(pl.UTF-8):	Pakiet bibliotek DLL obsługujących szkielet DCOM Microsoftu
 Name:		dcom98
 Version:	1.3
 Release:	3
